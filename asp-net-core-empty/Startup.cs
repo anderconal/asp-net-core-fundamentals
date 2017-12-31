@@ -31,6 +31,8 @@ namespace asp_net_core_empty
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseFileServer();
+
             app.Run(async (context) =>
             {
                 var greeting = greeter.GetMessageOfTheDay();
